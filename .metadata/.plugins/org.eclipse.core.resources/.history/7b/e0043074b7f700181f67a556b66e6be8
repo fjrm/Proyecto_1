@@ -1,0 +1,94 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Enumeration;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GestionCochesServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L; // Sirve para definir un id que será usado por la virtual machine cuando serializa y deserializa
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ejecutar(request, response);
+	}
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ejecutar(request, response);
+	}
+
+	private void ejecutar(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		Enumeration nombres = request.getParameterNames(); // Obtener enumeración con la colección de los nombres de variable enviados desde la página web
+		StringBuilder contenido = new StringBuilder(); // Objeto que permite acumular un texto dentro de una variable
+		
+		while (nombres.hasMoreElements()) { // mientras haya valores dentro de esa enumeración
+			String var = (String) nombres.nextElement(); // Tomar el nombre de la variable que nos toca recorrer
+			contenido.append(var); // Añadir el nombre dentro del contenido
+			contenido.append("="); // Separador
+			contenido.append(request.getParameter(var)); // Recuperarla y añadirla al contenido
+			contenido.append("<br/>"); // Salto de línea
+		}
+
+		String nombre = request.getParameter("nombre"); // Devuelve el valor de un parámetro de solicitud como una cadena o nulo si el parámetro no existe
+		response.setContentType("text/html");
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>"); // Añadir el contenido poco a poco
+		sb.append("Hola " + nombre + " y adiós <br/>"); // Está en esta variable el texto que se desea enviar a destino
+		sb.append(contenido.toString()); // Para ver lo que hay dentro
+		sb.append("</html>");
+		// pw.close(); // No hace falta porque no hay un writer que cerrar	
+		String[] codigos_isbn = request.getParameterValues("isbn"); // El código de cada coche
+		ArrayList<Object[]> datos = (ArrayList<Object[]>)request.getSession().getAttribute("datos");
+		ArrayList<Object[]> datosFiltrados = new ArrayList<>(); // Crea una matriz para almacenar los objetos	
+		System.out.println("---------antes de for");
+		System.out.println("---------codigos_isbn: " + Arrays.toString(codigos_isbn));
+		
+		for (Object[] dato : datos) {
+			System.out.println("---------dato:" + Arrays.toString(dato));
+		}
+
+		for (Object[] coche : datos) {
+			for (String isbn:codigos_isbn)
+			{
+				System.out.println("comparamos -" + coche[0] + "- con -" + isbn + "-");
+				if (coche[0].toString().equals(isbn)) // Para no repetir valor de isbn y comparar variables del mismo tipo. Uno era un object y otro un string
+				{
+					datosFiltrados.add(coche);
+					System.out.println("-------añadimos coche: " + coche);
+				}
+			}
+		}
+		
+		request.getSession().setAttribute("datosFiltrados", datosFiltrados);
+		
+		RequestDispatcher rd2 = getServletContext().getRequestDispatcher("/MostrarResultado.jsp");
+		
+
+			try {
+				request.setAttribute("información", sb.toString()); // No se envía la variable información sin esta línea de código
+				rd2.forward(request, response); // Reenviar la información que hay aquí al otro servlet
+
+			} catch (ServletException e) { // TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+
+		System.out.println("fin GestionCochesServlet");
+
+		}
+
+	}
+
+	
+	

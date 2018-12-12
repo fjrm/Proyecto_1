@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">                                                     
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="formulario" action= "/PruebaEEE/miservlet" method="post"> 
+	<input type="text" name="user"/>
+	Usuario<br/>
+	<input type="submit" name="validar" value="Validar y buscar" /> 
+	</form>   
+	
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Japancar MM, distribuidor oficial de Mazda y Mitsubishi en Barcelona">
+	<meta name="keywords" content="Japancar MM, Mazda, Mitsubishi, Barcelona">
+	<title>Japancar MM | Inicio</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style>
+		main{
+		overflow: auto;
+		background-color: white;
+		}
+
+		.cero{
+			background-image: url(img/01.jpg);
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size: 100%; 
+			height: 700px;
+		}
+
+		.transparente{
+			background-color: rgba(255, 255, 255, 0.75);
+			float: right;
+			text-align: left;
+			height: 450px;
+			width: 390px;
+			padding-top: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+			padding-left: 50px;
+		}
+
+		.transparente>h2{
+			color: #000000;
+			font-size: 1.7em;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 20px;
+			padding-left: 0px;
+		}
+
+		.transparente>p{
+			line-height: 1.4em;
+		}
+		
+		.transparente>a{
+			color: #696969;
+			text-align: left;
+			font-style: italic;
+			font-weight: bold;
+		}
+		
+		.transparente>a:hover{
+			color: #000000;
+		}
+
+		#seguir1{
+			color: #696969;
+			text-align: left;
+			font-style: italic;
+			font-weight: bold;
+			padding-top: 30px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			padding-left: 0px;
+		}
+
+		#seguir1>a:hover{
+			color: #4682B4;
+		}
+
+		#seguir2{
+			color: #696969;
+			text-align: left;
+			font-style: italic;
+			font-weight: bold;
+			padding-top: 10px;
+			padding-right: 0px;
+			padding-bottom: 10px;
+			padding-left: 0px;
+		}
+
+		#seguir2>a:hover{
+			color: #B22222;
+		}
+
+		#uno{
+			background-color: #E6E6FA;
+			text-align: center;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 200px;
+			padding-left: 0px;
+		}
+
+		#uno>img{
+			border-radius: 100px;
+			height: 120px; 
+			width: 140px;
+			margin-top: 100px;
+			margin-bottom: 10px;
+		}
+
+		#uno>h2{
+			color: #4682B4;
+			font-size: 2em;
+			text-align: center;	
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 60px;
+			padding-left: 0px;
+		}
+
+		#uno>ul{
+			text-align: center;
+		}
+
+		#uno>ul>li{
+			display: inline-block;
+			margin: 6px 3px;
+			overflow: hidden;
+		}
+
+		#uno>ul>li:hover img{
+			transform: scale(1.05);
+		}
+
+		#uno>ul>li>img{
+			display: block;
+			transition: transform 2s;
+			width: 400px;
+		}
+
+		#uno>ul>li>a{
+			background-color: #4682B4;
+			color: #FFFFFF;
+			display: block;
+			font-size: 1.2em;
+			text-align: center;
+			width: 400px;
+			padding-top: 8px;
+			padding-right: 10px;
+			padding-bottom: 8px;
+			padding-left: 10px;
+			position: relative;
+			z-index: 5;
+		}
+
+		#uno>ul>li>a:hover{
+			color: #E6E6FA;
+		}
+
+		#dos{
+			background-color: #D8BFD8;
+			text-align: center;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 200px;
+			padding-left: 0px;
+		}
+
+		#dos>img{
+			border-radius: 100px;
+			height: 120px; 
+			width: 140px;
+			margin-top: 100px;
+			margin-bottom: 10px;
+		}
+
+		#dos>h2{
+			color: #B22222;
+			font-size: 2em;
+			text-align: center;	
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 60px;
+			padding-left: 0px;
+		}
+
+		#dos>ul{
+			text-align: center;
+		}
+
+		#dos>ul>li{
+			display: inline-block;
+			margin: 6px 3px;
+			overflow: hidden;
+		}
+
+		#dos>ul>li:hover img{
+			transform: scale(1.05);
+		}
+
+		#dos>ul>li>img{
+			display: block;
+			transition: transform 2s;
+			width: 400px;
+		}
+
+		#dos>ul>li>a{
+			background-color: #B22222;
+			color: #FFFFFF;
+			display: block;
+			font-size: 1.2em;
+			text-align: center;
+			width: 400px;
+			padding-top: 8px;
+			padding-right: 10px;
+			padding-bottom: 8px;
+			padding-left: 10px;
+			position: relative;
+			z-index: 5;
+		}
+
+		#dos>ul>li>a:hover{
+			color: #D8BFD8;
+		}
+
+		@media only screen and (min-width: 315px) and (max-width: 1049px){ 
+
+
+		/*MAIN*/
+
+		main{
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			padding-left: 0px;	
+			max-width: 100%;
+		    margin: auto;
+
+		}
+
+		}
+		 
+		@media only screen and (min-width: 315px) and (max-width: 718px){   
+
+
+		/*MAIN*/
+
+		main{
+			overflow: initial;
+		}
+
+		.cero{
+			background-position: right;
+			background-size: auto 100%; 
+			height: 360px;
+		}
+
+		.transparente{
+			background-color: rgba(255, 255, 255, 0.25);
+			color: #A9A9A9;
+			float: none;
+			text-align: left;
+			height: 100%;
+			width: 100%;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+		}
+
+		.transparente>h2{
+			color: #000000;
+			font-size: 1.7em;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 20px;
+			padding-left: 0px;
+		}
+
+		#seguir1{
+			color: #DCDCDC;
+		}
+
+		#seguir2{
+			color: #DCDCDC;
+		}
+
+		#uno>ul>li>img{
+			width: 100%;
+		}
+
+		#uno>ul>li>a{
+			width: 100%;
+		}
+
+		#dos>ul>li>img{
+			width: 100%;
+		}
+
+		#dos>ul>li>a{
+			width: 100%;
+		}
+
+		}
+
+		@media only screen and (min-width: 719px) and (max-width: 845px){ 
+
+
+		/*MAIN*/
+
+		.cero{
+			background-position: top;
+			background-size: auto 100%; 
+			height: 500px;
+		}
+
+		.transparente{
+			height: 450px;
+			width: 350px;
+		}
+
+		}
+
+		@media only screen and (min-width: 846px) and (max-width: 1049px){ 
+
+
+		/*MAIN*/
+
+		.cero{
+			background-position: top;
+			background-size: auto 100%; 
+			height: 600px;
+		}
+
+		.transparente{
+			height: 450px;
+			width: 350px;
+		}
+
+		}
+
+		@media only screen and (min-width: 1050px) and (max-width: 1250px){
+
+		/*MAIN*/
+
+		.cero{
+			background-position: top;
+			background-size: auto 100%; 
+			height: 700px;
+		}
+
+		} 
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="logo">
+				<h1><span>Japancar</span> MM</h1>
+				<p>Concesionario Oficial Mazda y Mitsubishi</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio<hr></a></li>
+					<li><a href="SobreNosostros.html">Sobre Nosotros<hr></a></li>
+					<li><a href="Concesionarios.html">Concesionarios<hr></a></li>
+					<li><a href="Contacto.html">Contacto<hr></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="cero">
+				<div class="transparente">
+					<h2>Japancar MM</h2>
+					<p>En Japancar MM ponemos a tu disposición toda la gama de automóviles Mazda y Mitsubishi en un mismo concesionario. Descubre todos los modelos, elige el que más te guste, acércate a nuestros concesionarios para poder contemplar el coche de tus sueños y déjate asesorar por nuestros/as asesores/as comerciales.</p>
+					<div id="seguir1">
+						<a href="#uno">Ver la gama Mazda</a>
+					</div>
+					<div id="seguir2">
+						<a href="#dos">Ver la gama Mitsubishi</a>
+					</div>
+					<a href="envioPost.html">Búsqueda rápida de coches</a>
+				</div>
+			</section>
+			<section id="uno">
+				<img src="img/Mazda_logo.jpg" alt="Mazda_logo">
+				<h2>MAZDA</h2>
+				<ul>
+					<li>
+						<img src="img/Mazda2Ext1.jpg" alt="Mazda2Ext1">
+						<a href="Mazda2.html">Mazda 2</a>
+					</li>
+					<li>
+						<img src="img/Mazda3Ext1.jpg" alt="Mazda3Ext1">
+						<a href="Mazda3.html">Mazda 3</a>
+					</li>
+					<li>
+						<img src="img/Mazda3SportSedanExt1.jpg" alt="Mazda3SportSedanExt1">
+						<a href="Mazda3SportSedan.html">Mazda 3 Sport Sedan</a>
+					</li>
+					<li>
+						<img src="img/Mazda6Ext1.jpg" alt="Mazda6Ext1">
+						<a href="Mazda6.html">Mazda 6</a>
+					</li>
+					<li>
+						<img src="img/Mazda6WagonExt1.jpg" alt="Mazda6WagonExt1">
+						<a href="Mazda6Wagon.html">Mazda 6 Wagon</a>
+					</li>
+					<li>
+						<img src="img/MazdaCX3Ext1.jpg" alt="MazdaCX3Ext1">
+						<a href="MazdaCX3.html">Mazda CX3</a>
+					</li>
+					<li>
+						<img src="img/MazdaCX5Ext1.jpg" alt="MazdaCX5Ext1">
+						<a href="MazdaCX5.html">Mazda CX5</a>
+					</li>
+					<li>
+						<img src="img/MazdaMX5RFExt1.jpg" alt="MazdaMX5RFExt1">
+						<a href="MazdaMX5RF.html">Mazda MX5 RF</a>
+					</li>
+					<li>
+						<img src="img/MazdaMX5RoadsterExt1.jpg" alt="MazdaMX5RoadsterExt1">
+						<a href="MazdaMX5Roadster.html">Mazda MX5 Roadster</a>
+					</li>
+				</ul>
+			</section>
+			<section id="dos">
+				<img src="img/Mitsubishi_logo.jpg" alt="Mitsubishi_logo">
+				<h2>MITSUBISHI</h2>
+				<ul>
+					<li>
+						<img src="img/MitsubishiASXExt1.jpg" alt="MitsubishiASXExt1">
+						<a href="MitsubishiASX.html">Mitsubishi ASX</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiEclipseCrossExt1.jpg" alt="MitsubishiEclipseCrossExt1">
+						<a href="MitsubishiEclipseCross.html">Mitsubishi Eclipse Cross</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiIMiEVExt1.jpg" alt="MitsubishiIMiEVExt1">
+						<a href="MitsubishiIMiev.html">Mitsubishi i-MiEV</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiL200Ext1.jpg" alt="MitsubishiL200Ext1">
+						<a href="MitsubishiL200.html">Mitsubishi L200</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiMonteroExt1.jpg" alt="MitsubishiMonteroExt1">
+						<a href="MitsubishiMontero.html">Mitsubishi Montero</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiOutlanderExt1.jpg" alt="MitsubishiOutlanderExt1">
+						<a href="MitsubishiOutlander.html">Mitsubishi Outlander</a>
+					</li>
+					<li>
+						<img src="img/MitsubishiSpaceStarExt1.jpg" alt="MitsubishiSpaceStarExt1">
+						<a href="MitsubishiSpaceStar.html">Mitsubishi Space Star</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<div class="menu_footer1">
+					<a href="Privacidad.html">Política de Privacidad</a> &nbsp|&nbsp <a href="Cookies.html">Cookies</a> &nbsp|&nbsp <a href="MapaDelSitio.html">Mapa del sitio</a>
+				</div>
+				<div class="menu_footer2">
+					<a href="https://www.mazda.es/">Web Oficial Mazda</a> &nbsp|&nbsp <a href="https://www.mitsubishi-motors.es">Web Oficial Mitsubishi Motors</a>
+				</div>
+			</section>
+			<div class="linea">
+				<p class="copyright">&copy; 2018 Japancar MM, S.L. Todos los derechos reservados</p>
+				<div class="redes">
+					<p>Síguenos en</p>
+					<ul>
+						<li>
+							<a href="https://es-es.facebook.com/"><img src="img/Facebook.jpg" alt="Facebook"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=es"><img src="img/Instagram.jpg" alt="Instagram"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/?lang=es"><img src="img/Twitter.jpg" alt="Twitter"></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/?gl=ES&hl=es"><img src="img/Youtube.jpg" alt="Youtube"></a>
+						</li>					
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

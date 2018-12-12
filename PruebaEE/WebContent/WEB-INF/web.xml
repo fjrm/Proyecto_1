@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>PruebaEE</display-name>
+
+
+  <servlet>
+  <servlet-name>consultaCochesServlet</servlet-name>
+  <servlet-class>ConsultaCochesServlet</servlet-class>
+  </servlet>  
+    
+  <servlet>
+  <servlet-name>gestionErrorServlet</servlet-name>
+  <servlet-class>GestionErrorServlet</servlet-class>
+  </servlet>
+      
+  <servlet>
+  <servlet-name>servletCerrarSession</servlet-name>
+  <servlet-class>ServletCerrarSession</servlet-class>
+  </servlet> 
+  
+  <servlet>
+  <servlet-name>gestionCochesServlet</servlet-name>
+  <servlet-class>GestionCochesServlet</servlet-class>
+  </servlet> 
+  
+  <servlet>
+  <servlet-name>gestionCochesServletDatos</servlet-name>
+  <servlet-class>GestionCochesServletDatos</servlet-class>
+  </servlet> 
+  
+  <servlet>
+  <servlet-name>gestionCochesServletDelete</servlet-name>
+  <servlet-class>GestionCochesServletDelete</servlet-class>
+  </servlet> 
+  
+  <servlet>
+  <servlet-name>verCocheServlet</servlet-name>
+  <servlet-class>VerCocheServlet</servlet-class>
+  </servlet> 
+  
+  <servlet>
+  <servlet-name>actualizarCochesServlet</servlet-name>
+  <servlet-class>ActualizarCochesServlet</servlet-class>
+  </servlet> 
+  
+  
+  
+  
+  <servlet-mapping>
+  <servlet-name>consultaCochesServlet</servlet-name>
+  <url-pattern>/consultacochesservlet</url-pattern>
+  </servlet-mapping>
+     
+  <servlet-mapping>
+  <servlet-name>gestionErrorServlet</servlet-name>
+  <url-pattern>/gestionerrorservlet</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+  <servlet-name>servletCerrarSession</servlet-name>
+  <url-pattern>/servletcerrarsession</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>gestionCochesServlet</servlet-name>
+  <url-pattern>/gestioncochesservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>gestionCochesServletDatos</servlet-name>
+  <url-pattern>/gestioncochesservletdatos</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>gestionCochesServletDelete</servlet-name>
+  <url-pattern>/gestioncochesservletdelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>verCocheServlet</servlet-name>
+  <url-pattern>/vercocheservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>actualizarCochesServlet</servlet-name>
+  <url-pattern>/actualizarcochesservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- ************************************************************ > 
+  <! ************************************************************ -->
+  
+  <filter>
+  <filter-name>filtroO</filter-name>
+  <filter-class>FiltroIP</filter-class>
+  </filter> 
+   
+  <filter-mapping>
+  <filter-name>filtroO</filter-name>
+  <servlet-name>consultaCochesServlet</servlet-name>
+  <dispatcher>REQUEST</dispatcher>
+  <dispatcher>FORWARD</dispatcher>
+  </filter-mapping> 
+  
+  
+  
+
+
+  <listener>
+  <listener-class>MiSessionListener</listener-class>
+  </listener>
+  
+  
+  
+  
+  
+ <context-param>
+ <param-name>prueba1</param-name>
+ <param-value>value1</param-value>
+ </context-param> 
+ 
+ 
+ 
+  
+ <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

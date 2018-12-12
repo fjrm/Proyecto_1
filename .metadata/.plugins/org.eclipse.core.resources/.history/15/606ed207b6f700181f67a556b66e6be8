@@ -1,0 +1,144 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Enumeration;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ConsultaCochesServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L; // Sirve para definir un id que será usado por la virtual machine cuando serializa y deserializa
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ejecutar(request, response);
+	}
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ejecutar(request, response);
+	}
+
+	private void ejecutar(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	// TODO Auto-generated method stub
+		System.out.println("inicio: ejecutar ConsultaCochesServlet");
+		String ordenarPor = request.getParameter("ordenarPor"); // Obtener valores. Para ordenar los coches	
+		Enumeration nombres = request.getParameterNames(); // Obtener enumeración con la colección de los nombres de variable enviados desde la página web
+		StringBuilder contenido = new StringBuilder(); // Objeto que permite acumular un texto dentro de una variable
+		
+		while (nombres.hasMoreElements()) { // Mientras haya valores dentro de esa enumeración
+			String var = (String) nombres.nextElement(); // Tomar el nombre de la variable que toca recorrer
+			contenido.append(var); // Añadir el nombre dentro del contenido
+			contenido.append("="); // Separador
+			contenido.append(request.getParameter(var)); // Recuperarla y añadirla al contenido
+			contenido.append("<br/>"); // Salto de línea
+		}
+
+		String nombre = request.getParameter("nombre");
+		response.setContentType("text/html"); // Lo que proviene de envioPost.html
+		StringBuilder sb = new StringBuilder(); // StringBuilder es una secuencia de caracteres mutable, su contenido y capacidad puede cambiar en cualquier momento
+		sb.append("<html>"); // Añadir el contenido poco a poco del envioPost.html
+		sb.append(nombre + "<br/>"); // Está en esta variable el texto que se desea enviar a destino
+		sb.append(contenido.toString()); // Para ver lo que hay dentro
+		sb.append("</html>");
+		// pw.close(); // No hace falta porque no hay un writer que cerrar
+		RequestDispatcher rd = getServletContext().getRequestDispatcher("/gestionerrorservlet"); // Reenviar la información que hay aquí al otro servlet	
+		String user = request.getParameter("user"); // Obtener valores. Devuelve el valor de un parámetro de solicitud como una cadena o nulo si el parámetro no existe
+		String password = request.getParameter("password"); // Obtener valores. Devuelve el valor de un parámetro de solicitud como una cadena o nulo si el parámetro no existe
+		PrintWriter out = response.getWriter(); // response.getWriter() devuelve un objeto PrintWriter que puede enviar texto de caracteres al cliente
+
+		if (user.equals("libre") && password.equals("libre")) { // Si se cumple esta condición. Si ordenarPor es != null es que ya ha entrado en la pagina, y no hace falta comprobar si usuario y password es correcto.
+			response.setContentType("text/html"); // Mostrar por web (no por console). Lo que proviene de envioPost.html
+			PrintWriter out1 = response.getWriter(); // Mostrar por web (no por console)
+			out1.println("<body style='background-color:#E9967A; font-family:arial; font-size: 1.2em; padding:20px'>"); 
+			//out1.println("<header style='background-color:purple;>");
+			out1.println("<span style='font-weight: bold'> 1) Seleccione una opción </span>" + "<br/>" + "<br/>"); // Mostrar texto
+			out1.println("<form name='formulario' action= '/PruebaEE/consultacochesservlet' method='post'>");
+			out1.println("<select style='background-color:lightgrey; font-size: 1em' name='ordenarPor' onchange='this.form.submit()'>");
+			out1.println("  <option value=' '></option>");
+			out1.println("  <option value='modelo'>Modelo por orden ascendente</option>");
+			out1.println("  <option value='potencia_cv'>Potencia por orden descendente</option>");
+			out1.println("  <option value='maletero_l'>Maletero por orden descendente</option>");
+			out1.println("</select>");						
+			out1.println("<input type='hidden' name='user' value='"+request.getParameter("user")+"'/>\n");
+			out1.println("<input type='hidden' name='password' value='"+request.getParameter("password")+"'/>\n");
+			out1.println("<input type='hidden' name='title' value='"+request.getParameter("title")+"'/>\n");					
+			out1.println("</form>");			
+			out1.println("<br/>" + "<br/>");
+			out1.println("<span style='font-weight: bold'> 2) Seleccione los coches que desee </span>" + "<br/>" + "<br/>");			
+			String titulo = request.getParameter("title"); // Recuperar la búsqueda de coches en la web
+			BaseDatos bd = new BaseDatos(); // Se crea llamando a un nuevo constructor			
+			System.out.println("ordenarPor = " + ordenarPor);
+			String ordenacion = null;
+			
+			if (ordenarPor == null)
+			{
+				ordenacion = "";
+			}
+			else if (ordenarPor.equals("modelo"))
+			{
+				ordenacion = " order by modelo ASC";			
+			}
+			else if (ordenarPor.equals("potencia_cv"))
+			{
+				ordenacion = " order by potencia_cv DESC";
+			}
+			else if (ordenarPor.equals("maletero_l"))
+			{
+				ordenacion = " order by maletero_l DESC";
+			}
+			else if (ordenarPor.equals("tipo_de"))
+			{
+				ordenacion = " order by maletero_l DESC";
+			}
+			
+			//*************************************************************************************						
+			
+			ArrayList<Object[]> datos = bd.buscarCoche(titulo, ordenacion); // Crea una matriz para almacenar los objetos
+			System.out.println("guardamos en sesion: " + datos.size() + " coches"); // Para determinar el tamaño de su matriz en bytes y mostrar variable coches
+			request.getSession() .setAttribute("datos", datos); //  Devolverá una sesión actual y si la sesión actual no existe creará una nueva. Almacena algo para esa sesión de usuario en particular
+
+			// *********** mostrar el resultado en la página siguiente ****************************
+			out.println("<form action=\"./gestioncochesservlet\">"); 
+			
+			for (Object[] fila : datos) {
+				out.println("<input type=\"checkbox\" name=\"isbn\" value='" + fila[0] + "'/>"); // Para colocar el checkbox de nombre isbn		
+				out.println(fila[0] + ") "); // Separar las filas con " ; "
+				out.println(fila[1] + " , ");
+				out.println(fila[2] + " , ");
+				out.println(fila[3] + " , ");
+				out.println(fila[4] + " puertas , ");
+				out.println(fila[5] + " , ");
+				out.println(fila[6] + " , ");
+				out.println(fila[7] + " , ");
+				out.println(fila[8] + " CV , ");
+				out.println(fila[13] + " litros de maletero ");
+				out.println("<br/>"); 			
+			}
+
+			out.println("<br/>" + "<input type=\"submit\" value=\"Información detallada de su selección\">");
+			out.println("<br/>" + "<br/>" + "<a style='text-decoration: none' href='./envioPost.html'>Volver a la página anterior</a>");
+			out.println("<br/>" + "<br/>" + "<a style='text-decoration: none' href='./servletcerrarsession'>Desconectar</a>");
+			//out.println("<br/>" + "<br/>" + "<br/>" + "<br/>" + "<a href='./Introducir.html'>Base de datos (Acceso restringido)</a>"); 
+			out.println("</form>"); // Es necesario cerrar el form para el checkbox
+		}
+		
+		else {
+			try {
+				request.setAttribute("información", sb.toString()); // No se envía la variable información sin esta línea de código
+				rd.forward(request, response); // Reenviar la información que hay aquí al otro servlet
+			} catch (ServletException e) { // TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+		System.out.println("consulta de coches");
+	}
+
+}

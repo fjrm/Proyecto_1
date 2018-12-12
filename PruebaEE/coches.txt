@@ -1,0 +1,133 @@
+# num; marca; modelo; acabado; n_de_puertas; tipo_de_carroceria; cambio; combustible; potencia_CV; consumo_medio_l; longitud_mm; anchura_mm; altura_mm; maletero_l; garantia_a; precio_euros
+1; Mazda; CX-3; Style; 5; SUV; manual; gasolina; 120; 5.9; 4275; 1765; 1535; 350; 3; 18545
+2; Mazda; CX-3; Style +; 5; SUV; manual; gasolina; 120; 5.9; 4275; 1765; 1535; 350; 3; 18945
+3; Mazda; CX-3; Style; 5; SUV; manual; diesel; 105; 4.0; 4275; 1765; 1535; 350; 3; 19995
+4; Mazda; CX-3; Style; 5; SUV; aut; gasolina; 120; 5.8; 4275; 1765; 1535; 350; 3; 20345
+5; Mazda; CX-3; Style +; 5; SUV; aut; gasolina; 120; 5.8; 4275; 1765; 1535; 350; 3; 20745
+6; Mazda; CX-3; Style +; 5; SUV; manual; diesel; 105; 4.0; 4275; 1765; 1535; 350; 3; 20795
+7; Mazda; CX-3; Luxury; 5; SUV; manual; gasolina; 120; 5.9; 4275; 1765; 1535; 350; 3; 21180
+8; Mazda; CX-3; Luxury; 5; SUV; manual; diesel; 105; 4.0; 4275; 1765; 1535; 350; 3; 22630
+9; Mazda; CX-3; Luxury; 5; SUV; aut; gasolina; 120; 5.8; 4275; 1765; 1535; 350; 3; 22980
+10; Mazda; CX-3; Luxury; 5; SUV AWD; manual; diesel; 105; 4.7; 4275; 1765; 1535; 350; 3; 24430
+11; Mazda; CX-3; Luxury; 5; SUV AWD; manual; gasolina; 150; 6.4; 4275; 1765; 1535; 350; 3; 24480
+12; Mazda; CX-3; Luxury; 5; SUV AWD; aut; diesel; 105; 5.2; 4275; 1765; 1535; 350; 3; 26230
+13; Mazda; CX-3; Luxury; 5; SUV AWD; aut; gasolina; 150; 6.3; 4275; 1765; 1535; 350; 3; 26280
+14; Mazda; CX-5; Origin; 5; SUV; manual; gasolina; 165; 6.4; 4550; 1840; 1675; 477; 3; 24600
+15; Mazda; CX-5; Evolution; 5; SUV; manual; gasolina; 165; 6.4; 4550; 1840; 1675; 477; 3; 26700
+16; Mazda; CX-5; Origin; 5; SUV; manual; diesel; 150; 5.0; 4550; 1840; 1675; 477; 3; 26850
+17; Mazda; CX-5; Zenith; 5; SUV; manual; gasolina; 165; 6.4; 4550; 1840; 1675; 477; 3; 28600
+18; Mazda; CX-5; Evolution; 5; SUV; manual; diesel; 150; 5.0; 4550; 1840; 1675; 477; 3; 28950
+19; Mazda; CX-5; Evolution; 5; SUV AWD; manual; gasolina; 160; 6.8; 4550; 1840; 1675; 477; 3; 29780
+20; Mazda; CX-5; Origin; 5; SUV AWD; manual; diesel; 150; 5.4; 4550; 1840; 1675; 477; 3; 29930
+21; Mazda; CX-5; Zenith; 5; SUV; manual; diesel; 150; 5.0; 4550; 1840; 1675; 477; 3; 30850
+22; Mazda; CX-5; Evolution; 5; SUV; aut; diesel; 150; 5.6; 4550; 1840; 1675; 477; 3; 31000
+23; Mazda; CX-5; Zenith; 5; SUV; aut; diesel; 150; 5.6; 4550; 1840; 1675; 477; 3; 31000
+24; Mazda; CX-5; Zenith; 5; SUV AWD; manual; gasolina; 160; 6.8; 4550; 1840; 1675; 477; 3; 31680
+25; Mazda; CX-5; Evolution; 5; SUV AWD; manual; diesel; 150; 5.4; 4550; 1840; 1675; 477; 3; 32030
+26; Mazda; CX-5; Zenith Cuero Negro; 5; SUV AWD; aut; gasolina; 160; 6.6; 4550; 1840; 1675; 477; 3; 33730
+27; Mazda; CX-5; Zenith Cuero Blanco; 5; SUV AWD; aut; gasolina; 160; 6.6; 4550; 1840; 1675; 477; 3; 33880
+28; Mazda; CX-5; Zenith; 5; SUV AWD; manual; diesel; 150; 5.4; 4550; 1840; 1675; 477; 3; 33930
+29; Mazda; CX-5; Zenith; 5; SUV AWD; aut; diesel; 175; 5.8; 4550; 1840; 1675; 477; 3; 36360
+30; Mazda; CX-5; Zenith Cuero Negro; 5; SUV AWD; aut; gasolina; 194; 7.1; 4550; 1840; 1675; 477; 3; 36775
+31; Mazda; CX-5; Zenith Cuero Blanco; 5; SUV AWD; aut; gasolina; 194; 7.1; 4550; 1840; 1675; 477; 3; 36925
+32; Mazda; CX-5; Zenith Cuero Negro; 5; SUV AWD; manual; diesel; 175; 5.4; 4550; 1840; 1675; 477; 3; 37410
+33; Mazda; CX-5; Zenith Cuero Blanco; 5; SUV AWD; manual; diesel; 175; 5.4; 4550; 1840; 1675; 477; 3; 37560
+34; Mazda; CX-5; Zenith Cuero Negro; 5; SUV AWD; aut; diesel; 150; 5.8; 4550; 1840; 1675; 477; 3; 37780
+35; Mazda; CX-5; Zenith Cuero Blanco; 5; SUV AWD; aut; diesel; 150; 5.8; 4550; 1840; 1675; 477; 3; 37930
+36; Mazda; MX-5 RF; Style; 2; descapotable; manual; gasolina; 131; 6.1; 3915; 1735; 1230; 127; 3; 25000
+37; Mazda; MX-5 RF; Style +; 2; descapotable; manual; gasolina; 131; 6.1; 3915; 1735; 1230; 127; 3; 27100
+38; Mazda; MX-5 RF; Luxury; 2; descapotable; manual; gasolina; 131; 6.1; 3915; 1735; 1230; 127; 3; 28300
+39; Mazda; MX-5 RF; Style +; 2; descapotable; manual; gasolina; 160; 6.9; 3915; 1735; 1230; 127; 3; 28300
+40; Mazda; MX-5 RF; Luxury; 2; descapotable; manual; gasolina; 160; 6.6; 3915; 1735; 1230; 127; 3; 29500
+41; Mazda; MX-5 RF; Nappa Edition; 2; descapotable; manual; gasolina; 160; 6.6; 3915; 1735; 1230; 127; 3; 29900
+42; Mazda; MX-5 RF; Luxury; 2; descapotable; aut; gasolina; 160; 7.2; 3915; 1735; 1230; 127; 3; 31300
+43; Mazda; MX-5 RF; Luxury Pack Sport; 2; descapotable; manual; gasolina; 160; 6.6; 3915; 1735; 1230; 127; 3; 31300
+44; Mazda; MX-5 Soft Top; Pulse; 2; descapotable; manual; gasolina; 131; 6.0; 3915; 1735; 1230; 130; 3; 21500
+45; Mazda; MX-5 Soft Top; Style; 2; descapotable; manual; gasolina; 131; 6.0; 3915; 1735; 1230; 130; 3; 23400
+46; Mazda; MX-5 Soft Top; Style +; 2; descapotable; manual; gasolina; 131; 6.0; 3915; 1735; 1230; 130; 3; 24600
+47; Mazda; MX-5 Soft Top; Luxury; 2; descapotable; manual; gasolina; 131; 6.0; 3915; 1735; 1230; 130; 3; 25800
+48; Mazda; MX-5 Soft Top; Style +; 2; descapotable; manual; gasolina; 160; 6.9; 3915; 1735; 1230; 130; 3; 25800
+49; Mazda; MX-5 Soft Top; Luxury; 2; descapotable; manual; gasolina; 160; 6.6; 3915; 1735; 1230; 130; 3; 27000
+50; Mazda; MX-5 Soft Top; Luxury Pack Sport; 2; descapotable; manual; gasolina; 160; 6.6; 3915; 1735; 1230; 130; 3; 28800
+51; Mazda; Mazda 2; Pulse; 5; utilitario; manual; gasolina; 75; 4.7; 4060; 1695; 1495; 280; 3; 11350
+52; Mazda; Mazda 2; Style; 5; utilitario; manual; gasolina; 75; 4.7; 4060; 1695; 1495; 280; 3; 12050
+53; Mazda; Mazda 2; Style; 5; utilitario; manual; gasolina; 90; 4.5; 4060; 1695; 1495; 280; 3; 12450
+54; Mazda; Mazda 2; Style +; 5; utilitario; manual; gasolina; 75; 4.7; 4060; 1695; 1495; 280; 3; 13050
+55; Mazda; Mazda 2; Style +; 5; utilitario; manual; gasolina; 90; 4.5; 4060; 1695; 1495; 280; 3; 13550
+56; Mazda; Mazda 2; Style +; 5; utilitario; manual; gasolina; 75; 4.7; 4060; 1695; 1495; 280; 3; 13550
+57; Mazda; Mazda 2; Style +; 5; utilitario; manual; gasolina; 90; 4.5; 4060; 1695; 1495; 280; 3; 14050
+58; Mazda; Mazda 2; Luxury; 5; utilitario; manual; gasolina; 90; 4.5; 4060; 1695; 1495; 280; 3; 15000
+59; Mazda; Mazda 2; Style +; 5; utilitario; aut; gasolina; 90; 4.8; 4060; 1695; 1495; 280; 3; 15900
+60; Mazda; Mazda 2; Luxury; 5; utilitario; manual; gasolina; 116; 4.9; 4060; 1695; 1495; 280; 3; 16500
+61; Mazda; Mazda 2; Luxury; 5; utilitario; aut; gasolina; 90; 4.8; 4060; 1695; 1495; 280; 3; 15550
+62; Mazda; Mazda 3; Pulse; 5; compacto; manual; gasolina; 101; 5.1; 4470; 1795; 1450; 364; 3; 17725
+63; Mazda; Mazda 3; Style; 5; compacto; manual; gasolina; 101; 5.1; 4470; 1795; 1450; 364; 3; 18525
+64; Mazda; Mazda 3; Style; 5; compacto; manual; gasolina; 120; 5.1; 4470; 1795; 1450; 364; 3; 20025
+65; Mazda; Mazda 3; Style; 5; compacto; manual; gasolina; 165; 5.8; 4470; 1795; 1450; 364; 3; 20325
+66; Mazda; Mazda 3; Style; 5; compacto; aut; gasolina; 120; 5.6; 4470; 1795; 1450; 364; 3; 20425
+67; Mazda; Mazda 3; Style; 5; compacto; manual; diesel; 105; 3.8; 4470; 1795; 1450; 364; 3; 21025
+68; Mazda; Mazda 3; Style; 5; compacto; manual; diesel; 150; 4.1; 4470; 1795; 1450; 364; 3; 21265
+69; Mazda; Mazda 3; Luxury; 5; compacto; manual; gasolina; 120; 5.1; 4470; 1795; 1450; 364; 3; 22225
+70; Mazda; Mazda 3; Style; 5; compacto; aut; diesel; 105; 4.4; 4470; 1795; 1450; 364; 3; 22765
+71; Mazda; Mazda 3; Luxury; 5; compacto; manual; gasolina; 165; 5.8; 4470; 1795; 1450; 364; 3; 22825
+72; Mazda; Mazda 3; Style; 5; compacto; aut; diesel; 150; 4.8; 4470; 1795; 1450; 364; 3; 23065
+73; Mazda; Mazda 3; Luxury; 5; compacto; aut; gasolina; 120; 5.6; 4470; 1795; 1450; 364; 3; 23165
+74; Mazda; Mazda 3; Luxury; 5; compacto; manual; diesel; 105; 3.8; 4470; 1795; 1450; 364; 3; 23765
+75; Mazda; Mazda 3; Luxury; 5; compacto; manual; diesel; 150; 4.1; 4470; 1795; 1450; 364; 3; 24965
+76; Mazda; Mazda 3; Luxury; 5; compacto; aut; diesel; 105; 4.4; 4470; 1795; 1450; 364; 3; 25565
+77; Mazda; Mazda 3; Luxury; 5; compacto; aut; diesel; 105; 4.8; 4470; 1795; 1450; 364; 3; 26565
+78; Mazda; Mazda 3 SportSedan; Style; 4; sedan compacto; manual; gasolina; 101; 5.0; 4580; 1795; 1450; 419; 3; 18225
+79; Mazda; Mazda 3 SportSedan; Style; 4; sedan compacto; manual; gasolina; 120; 5.1; 4580; 1795; 1450; 419; 3; 19025
+80; Mazda; Mazda 3 SportSedan; Style; 4; sedan compacto; aut; gasolina ; 120; 5.6; 4580; 1795; 1450; 419; 3; 20825
+81; Mazda; Mazda 3 SportSedan; Style; 4; sedan compacto; manual; diesel; 105; 3.8; 4580; 1795; 1450; 419; 3; 20925
+82; Mazda; Mazda 3 SportSedan; Style; 4; sedan compacto; manual; diesel; 150; 3.9; 4580; 1795; 1450; 419; 3; 21525
+83; Mazda; Mazda 3 SportSedan; Luxury; 4; sedan compacto; manual; gasolina; 120; 5.1; 4580; 1795; 1450; 419; 3; 21765
+84; Mazda; Mazda 3 SportSedan; Luxury; 4; sedan compacto; aut; gasolina; 120; 5.6; 4580; 1795; 1450; 419; 3; 23565
+85; Mazda; Mazda 3 SportSedan; Luxury; 4; sedan compacto; manual; diesel; 105; 3.8; 4580; 1795; 1450; 419; 3; 23665
+86; Mazda; Mazda 3 SportSedan; Luxury; 4; sedan compacto; manual; diesel; 150; 3.9; 4580; 1795; 1450; 419; 3; 24265
+87; Mazda; Mazda 6 Sedan; Style; 4; berlina; manual; gasolina; 145; 5.5; 4865; 1840; 1450; 480; 3; 24975
+88; Mazda; Mazda 6; Style +; 4; berlina; manual; gasolina; 145; 5.5; 4865; 1840; 1450; 480; 3; 26875
+89; Mazda; Mazda 6; Style; 4; berlina; manual; diesel; 150; 3.9; 4865; 1840; 1450; 480; 3; 27225
+90; Mazda; Mazda 6; Style +; 4; berlina; manual; diesel; 150; 3.9; 4865; 1840; 1450; 480; 3; 29125
+91; Mazda; Mazda 6; Style +; 4; berlina; aut; diesel; 150; 4.8; 4865; 1840; 1450; 480; 3; 31125
+92; Mazda; Mazda 6; Luxury; 4; berlina; aut; diesel; 150; 4.8; 4865; 1840; 1450; 480; 3; 33125
+93; Mazda; Mazda 6; Luxury; 4; berlina; manual; diesel; 175; 4.5; 4865; 1840; 1450; 480; 3; 33795
+94; Mazda; Mazda 6; Luxury; 4; berlina; aut; gasolina; 192; 6.3; 4865; 1840; 1450; 480; 3; 34145
+95; Mazda; Mazda 6; Luxury; 4; berlina; aut; diesel; 175; 4.8; 4865; 1840; 1450; 480; 3; 37185
+96; Mazda; Mazda 6 Wagon; Style; 5; familiar berlina; manual; gasolina; 145; 5.6; 4800; 1840; 1480; 522; 3; 24975
+97; Mazda; Mazda 6 Wagon; Style +; 5; familiar berlina; manual; gasolina; 145; 5.6; 4800; 1840; 1480; 522; 3; 26875
+98; Mazda; Mazda 6 Wagon; Style; 5; familiar berlina; manual; diesel; 150; 4.2; 4800; 1840; 1480; 522; 3; 27225
+99; Mazda; Mazda 6 Wagon; Style +; 5; familiar berlina; manual; diesel; 150; 4.2; 4800; 1840; 1480; 522; 3; 29125
+100; Mazda; Mazda 6 Wagon; Luxury; 5; familiar berlina; manual; diesel; 150; 4.2; 4800; 1840; 1480; 522; 3; 31125
+101; Mazda; Mazda 6 Wagon; Style +; 5; familiar berlina; aut; diesel; 150; 4.9; 4800; 1840; 1480; 522; 3; 31125
+102; Mazda; Mazda 6 Wagon; Luxury; 5; familiar berlina; aut; diesel; 150; 4.9; 4800; 1840; 1480; 522; 3; 33125
+103; Mazda; Mazda 6 Wagon; Luxury; 5; familiar berlina; aut; gasolina; 192; 6.4; 4800; 1840; 1480; 522; 3; 34145
+104; Mazda; Mazda 6 Wagon; Luxury; 5; familiar berlina; aut; diesel; 175; 4.9; 4800; 1840; 1480; 522; 3; 37185
+105; Mazda; Mazda 6 Wagon; Luxury; 5; familiar berlina AWD; aut; diesel; 175; 5.4; 4800; 1840; 1480; 522; 3; 38795
+106; Mitsubishi; ASX; Challenge; 5; SUV; manual; gasolina; 117; 5.7; 4355; 1770; 1640; 416; 3; 17900
+107; Mitsubishi; ASX; Motion; 5; SUV; manual; gasolina; 117; 5.7; 4355; 1810; 1640; 416; 3; 18690
+108; Mitsubishi; ASX; Challenge; 5; SUV; manual; diesel; 114; 4.6; 4355; 1770; 1640; 416; 3; 20550
+109; Mitsubishi; ASX; Motion; 5; SUV; manual; diesel; 114; 4.6; 4355; 1810; 1640; 416; 3; 21550
+110; Mitsubishi; ASX; Kaiteki; 5; SUV; manual; gasolina; 117; 5.7; 4355; 1810; 1640; 416; 3; 22700
+111; Mitsubishi; ASX; Motion; 5; SUV AWD; manual; diesel; 114; 5.0; 4355; 1810; 1640; 416; 3; 24050
+112; Mitsubishi; ASX; Kaiteki; 5; SUV; manual; diesel; 114; 4.6; 4355; 1810; 1640; 416; 3; 25150
+113; Mitsubishi; ASX; Kaiteki; 5; SUV AWD; aut; diesel; 150; 5.8; 4355; 1810; 1640; 416; 3; 31200
+114; Mitsubishi; L200 Club Cab; M-PRO; 4; pick up AWD; manual; diesel; 154; 6.4; 5195; 1785; 1775; 0; 3; 24635
+115; Mitsubishi; L200 Double Cab; M-PRO; 4; pick up AWD; manual; diesel; 154; 6.4; 5205; 1785; 1775; 0; 3; 27553
+116; Mitsubishi; L200 Double Cab; Motion; 4; pick up AWD; manual; diesel; 154; 6.4; 5205; 1785; 1775; 0; 3; 33064
+117; Mitsubishi; L200 Double Cab; Kaiteki; 4; pick up AWD; aut; diesel; 181; 7.2; 5205; 1785; 1775; 0; 3; 39223
+118; Mitsubishi; Montero; Spirit; 3; SUV AWD; aut; diesel; 200; 9.0; 4385; 1875; 1840; 290; 3; 35700
+119; Mitsubishi; Montero; Kaiteki; 3; SUV AWD; aut; diesel; 200; 9.0; 4385; 1875; 1840; 290; 3; 44500
+120; Mitsubishi; Montero; Spirit; 5; SUV AWD; aut; diesel; 200; 9.3; 4900; 1875; 1860; 663; 3; 38700
+121; Mitsubishi; Montero; Kaiteki; 5; SUV AWD; aut; diesel; 200; 9.3; 4900; 1875; 1860; 663; 3; 47500
+122; Mitsubishi; Outlander; Motion; 5; SUV; aut; gasolina; 150; 6.2; 4695; 1800; 1680; 550; 3; 25400
+123; Mitsubishi; Outlander 7 plazas; Motion; 5; SUV; aut; gasolina; 150; 6.3; 4695; 1800; 1680; 519; 3; 26400
+124; Mitsubishi; Outlander; Motion; 5; SUV; manual; diesel; 150; 4.9; 4695; 1800; 1680; 550; 3; 27400
+125; Mitsubishi; Outlander 7 plazas; Motion; 5; SUV; manual; diesel; 150; 5.1; 4695; 1800; 1680; 519; 3; 28400
+126; Mitsubishi; Outlander 7 plazas; Motion; 5; SUV; manual; diesel; 150; 5.1; 4695; 1800; 1680; 519; 3; 31900
+127; Mitsubishi; Outlander 7 plazas; Motion; 5; SUV; aut; diesel; 150; 5.8; 4695; 1800; 1680; 519; 3; 33400
+128; Mitsubishi; Outlander 7 plazas; Kaiteki; 5; SUV; aut; diesel; 150; 5.8; 4695; 1800; 1680; 519; 3; 37800
+129; Mitsubishi; Outlander; Kaiteki; 5; SUV AWD; aut; híbrido; 203; 1.7; 4695; 1800; 1710; 498; 3; 39920
+130; Mitsubishi; Space Star; Motion; 5; urbano; manual; gasolina; 80; 4.1; 3795; 1665; 1505; 235; 3; 11400
+131; Mitsubishi; Space Star; Kaiteki; 5; urbano; manual; gasolina; 80; 4.3; 3795; 1665; 1505; 235; 3; 12400
+132; Mitsubishi; i-MiEV; ; 5; urbano; aut; eléctrico; 67; 0.0; 3475; 1475; 1610; 166; 3; 25000

@@ -1,0 +1,49 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
+
+public class MiServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L; //sirve para definir un id que sera usado por la virtual machine cuando serializa y deserealiza
+	
+
+	public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Obtenemos un objeto Print Writer para enviar respuesta
+	
+			ejecutar(request, response);
+			//super.doPost(request, response);
+
+	}
+	
+	public void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Obtenemos un objeto Print Writer para enviar respuesta
+		
+			ejecutar(request, response);
+			//super.doGet(request, response);
+			
+	}
+	
+
+	private void ejecutar(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		// TODO Auto-generated method stub
+		String user = request.getParameter("user");
+		if (user.equals("admi")) {
+			response.setContentType("text/html"); // mostrar por web (no por console)
+			PrintWriter out1 = response.getWriter(); // mostrar por web (no por console)
+			out1.println("HOLA MUNDO");
+		}
+		
+		else{
+			response.setContentType("text/html"); // mostrar por web (no por console)
+			PrintWriter out1 = response.getWriter(); // mostrar por web (no por console)
+			out1.println("ADIÓS");
+			}
+	}
+} 
